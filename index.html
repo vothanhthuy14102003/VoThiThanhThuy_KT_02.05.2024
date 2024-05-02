@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.js">
+    <title>Chào mừng đến với trang Web của tôi</title>
+</head>
+<style>
+    body {
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20201009/pngtree-soft-purple-and-pink-watercolor-paint-background-image_402197.jpg");
+        background-size: cover;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2 {
+        font-size: 40px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    ul, form {
+        text-align: flex;
+        margin: 20px auto;
+        width: 80%;
+    }
+  img.header-image {
+        width: 50%;
+        height: auto;
+    }
+</style> 
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="home description" content="Home"> 
+    <meta name="keywords" content="Home các keywords để dễ tìm web của mình (1 từ, 2 từ, hoặc cụm từ )">
+    <meta name="author" content="tác giả viêt trang này">
+    <meta name="viewport" content="width=device-width initial-scale=1.0"> 
+    <img class="header-image" src="https://static.keralatourssale.com/kolkata-to-kerala-honeymoon-package-3-nights-4-days-by-flight.jpg"/>
+    <br>
+    <h1>Web cá nhân của tôi!</h1>       
+  
+    <section>
+        <h2>Thông tin cá nhân</h2>
+        <ul>
+            <li> Họ tên: Võ Thị Thanh Thúy</li>
+            <li> Ngày sinh: 14/10/2003</li>
+            <li> Quê quán: Quảng Ngãi</li>
+            <li> MSSV: 21101381</li>
+            <li> Lớp: DHTMDT17E</li>
+            <li> Ngành: Thương mại điện tử</li>
+            <li> Trường Đại học Công Nghiệp TP. Hồ Chí Minh</li>  
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Sở thích:</h2>
+        <ul>
+            <li> Đọc sách</li>
+            <li> Nghe nhạc</li>
+            <li> Đi du lịch</li>
+        </ul>      
+    </section>
+    
+    <section>
+        <h2>Lấy thông tin người dùng:</h2>
+        <form>
+            <div>
+                <label>Điền thông tin của bạn</label>
+                <input type="text" placeholder="Tên của bạn"/>
+                
+                <select>
+                    <option>Nữ</option>
+                    <option>Nam</option>
+                    <option>Unisex</option>
+                </select>
+            </div>
+            <div>
+                <label>Bạn có người yêu chưa</label>
+                <input type="radio" name="Người yêu"> Chưa có
+                <input type="radio" name="Người yêu"> Có rồi
+            </div>
+        </form>     
+    </section>
+    
+    <section>
+        <h2>Hãy đặt câu hỏi cho tôi nhé!</h2>
+        <form>
+            <input type="text" placeholder="Điền câu hỏi của bạn"/>
+            <button>Gửi câu hỏi</button>
+        </form>     
+    </section>
+ 
+    <section>
+        <h2>Thông tin liên hệ:</h2>
+        <ul>
+            <li>Email: vothanhthuy14102003@gmail.com</li>
+            <li>Số điện thoại: 0367227631</li>
+            <li>Facebook: <a href="https://www.facebook.com/thanhh.t.voo/">https://www.facebook.com/thanhh.t.voo/</a></li>
+        </ul>   
+    </section>
+
+    <h2>
+        Cảm ơn các bạn đã xem qua trang web của mình nhé!
+    </h2>
+    <img width="250" src="https://bizweb.dktcdn.net/100/438/408/files/meme-meo-cute-yody-vn-28.jpg?v=1690276136662"/>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the input values
+            const name = document.querySelector('input[type="text"]').value;
+            const gender = document.querySelector('select').value;
+
+            // Display the message
+            alert(`Tin nhắn đã gửi. Xin cảm ơn, ${name} (${gender})!`);
+        });
+    });
+    </script>
+</body>
+</html>
